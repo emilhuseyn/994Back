@@ -1,0 +1,23 @@
+{
+  "_comment": "Copy this file to 'appsettings.Production.json' on the server and fill the real values. That file is gitignored so secrets never reach the repo. Alternatively set these as environment variables (e.g. ConnectionStrings__DefaultConnection, Gemini__ApiKey, Jwt__SecretKey).",
+  "ConnectionStrings": {
+    "DefaultConnection": "server=localhost;database=Shopping;user=code994;password=YOUR_DB_PASSWORD;"
+  },
+  "Jwt": {
+    "Issuer": "ECommerce.API",
+    "Audience": "ECommerce.Client",
+    "SecretKey": "GENERATE_A_LONG_RANDOM_64_CHAR_SECRET_FOR_PRODUCTION",
+    "AccessTokenMinutes": 120
+  },
+  "Gemini": {
+    "ApiKey": "YOUR_GEMINI_API_KEY",
+    "Model": "gemini-2.5-flash",
+    "TimeoutSeconds": 30
+  },
+  "Cors": {
+    "AllowedOrigins": [
+      "https://your-domain.az",
+      "https://www.your-domain.az"
+    ]
+  }
+}

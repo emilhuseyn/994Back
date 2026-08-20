@@ -1,0 +1,41 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.dbmdl
+*.dbproj.schemaview
+
+## VS / Rider
+.vs/
+.idea/
+*.swp
+
+## Build artifacts
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## SQL Server / EF
+*.mdf
+*.ldf
+
+## Logs
+logs/
+*.log
+
+## Local upload folder
+src/ECommerce.API/wwwroot/uploads/
+
+## Secrets — environment-specific settings stay OUT of git.
+## Real connection strings / API keys live here (local) or in env vars (prod).
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+appsettings.*.Local.json
+
+## OS
+.DS_Store
+Thumbs.db
